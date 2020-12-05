@@ -66,5 +66,12 @@ godoc.org : stdlib, third-party packages
 - struct는 value type이다. 
 따라서 struct factory는 포인터를 반환하여 객체 복사가 이루어지지 않는 것이 좋다
 
+- array와 stuct는 value다.  따라서 이용할 때 포인터를 이용하는 것이 좋다. 반면 slice와 map은 reference type이다. 복사하면 참조복사를 한다.  
+  
+- effective go에서는 array 대신 slice를 이용을 권장하고 있다.  
+
 - map, slice는 reference type이다. 
-초기화하지 않으면 기본값으로 자동 초기화되지 않고 nil이 된다.
+초기화하지 않으면 기본값으로 자동 초기화되지 않고 nil이 된다.  
+
+- A string is a sequence of bytes
+

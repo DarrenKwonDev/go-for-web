@@ -2,18 +2,9 @@ package main
 
 import "fmt"
 
-// hotdog라는 타입
-type hotdog int
-
-var b hotdog
-
 func main() {
-	var a int
-	b = 3
-	// a = b  error! main.hotdog를 int에 할당할 수 없음
-	a = int(b)
+	x := []string{` Alabama`, ` Alaska`, ` Arizona`, ` Arkansas`, ` California`, ` Colorado`, ` Connecticut`, ` Delaware`, ` Florida`, ` Georgia`, ` Hawaii`, ` Idaho`, ` Illinois`, ` Indiana`, ` Iowa`, ` Kansas`, ` Kentucky`, ` Louisiana`, ` Maine`, ` Maryland`, ` Massachusetts`, ` Michigan`, ` Minnesota`, ` Mississippi`, ` Missouri`, ` Montana`, ` Nebraska`, ` Nevada`, ` New Hampshire`, ` New Jersey`, ` New Mexico`, ` New York`, ` North Carolina`, ` North Dakota`, ` Ohio`, ` Oklahoma`, ` Oregon`, ` Pennsylvania`, ` Rhode Island`, ` South Carolina`, ` South Dakota`, ` Tennessee`, ` Texas`, ` Utah`, ` Vermont`, ` Virginia`, ` Washington`, ` West Virginia`, ` Wisconsin`, ` Wyoming`}
 
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Printf("%T", b) // main.hotdog
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
 }
