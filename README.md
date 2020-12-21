@@ -16,7 +16,7 @@ https://github.com/GoesToEleven/go-programming
 
 [golang official doc](https://golang.org/doc/) => [effect go](https://gosudaweb.gitbooks.io/effective-go-in-korean/content/)는 한국어 번역이 있음  
 [golang language spec](https://golang.org/ref/spec)  
-[golang official doc (일부 한글)](https://github.com/golang-kr/golang-doc/wiki)
+[golang official doc (일부 한글)](https://github.com/golang-kr/golang-doc/wiki)  
 
 ### golang.org vs godoc.org  
 
@@ -26,11 +26,13 @@ godoc.org : stdlib, third-party packages
 
 ## book  
 
-가장 빨리 만나는 Go  005.13 Y58g 2015
-Go 언어를 활용한 마이크로서비스  005.133 J136b 2018
+가장 빨리 만나는 Go  
+Go 언어를 활용한 마이크로서비스  
 Go 풀스택 웹 개발   
-Go 마스터하기  005.133 T786m 
-Go in action  
+Go 마스터하기  005.133 T786m  
+Go in action   
+[DI in go(한국어 책)](http://acornpub.co.kr/book/dependency-injection-go)
+
 ## std lib and framewok
 
 [std lib](https://golang.org/pkg/)  
