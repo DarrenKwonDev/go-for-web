@@ -68,6 +68,10 @@ Go in action
 [udemy lecture](www.udemy.com/course/go-programming-language/)  
 [ardan labs](https://www.ardanlabs.com/ultimate-go/)  
 
+## usefull source  
+
+https://github.com/gookit/goutil  
+
 
 ## info  
 
