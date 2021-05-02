@@ -73,6 +73,13 @@ Go in action
 https://github.com/gookit/goutil  
 
 
+## go blockchain  
+
+https://ethereum.org/en/developers/docs/programming-languages/golang/
+https://pkg.go.dev/github.com/ethereum/go-ethereum
+https://github.com/ethereum/go-ethereum  
+
+
 ## info  
 
 - Everything in Go is **pass by value** 따라서 직접 값을 복사해주고 싶지 않다면 포인터를 넘겨야 한다.
