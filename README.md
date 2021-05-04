@@ -67,6 +67,7 @@ Go in action
 [medium post](medium.com/qvault/learn-go-fast-best-courses-and-resources-3a42e70476c3)  
 [udemy lecture](www.udemy.com/course/go-programming-language/)  
 [ardan labs](https://www.ardanlabs.com/ultimate-go/)  
+[마소에서 제공하는 go 강의](https://docs.microsoft.com/ko-kr/learn/paths/go-first-steps/)  
 
 ## usefull source  
 
