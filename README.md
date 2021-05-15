@@ -49,6 +49,10 @@ Go in action
 [Go와 함께하는 전화망 서비스 구축 2편](https://d2.naver.com/helloworld/0814313)   
 [Go 전반적인 이야기와 웹 프레임워크 선택](https://kimtaekju-study.tistory.com/203)  
 [Error는 검사만 하지말고, 우아하게 처리하세요.](http://cloudrain21.com/golang-graceful-error-handling#errors-just-values)  
+
+[Go로 살피는 디자인 패턴](https://pi-sin0.medium.com/head-first-design-patterns-using-go-introduction-d9f05a4c243a) 
+[medium의 rungo 모든 포스트들](https://medium.com/rungo)  
+
 ## good website  
 
 [golangKorea](https://github.com/golangkorea)  
