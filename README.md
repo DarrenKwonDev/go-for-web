@@ -53,6 +53,10 @@ Go in action
 [Go로 살피는 디자인 패턴](https://pi-sin0.medium.com/head-first-design-patterns-using-go-introduction-d9f05a4c243a) 
 [medium의 rungo 모든 포스트들](https://medium.com/rungo)  
 
+[Go로 구현하는 블록체인 1~7](https://mingrammer.com/categories/blockchain/)  
+[Go 관련한 여러 글들](https://mingrammer.com/categories/go/)    
+
+
 ## good website  
 
 [golangKorea](https://github.com/golangkorea)  
@@ -80,9 +84,9 @@ https://github.com/gookit/goutil
 
 ## go blockchain  
 
-https://ethereum.org/en/developers/docs/programming-languages/golang/
-https://pkg.go.dev/github.com/ethereum/go-ethereum
-https://github.com/ethereum/go-ethereum  
+https://ethereum.org/en/developers/docs/programming-languages/golang/  
+https://pkg.go.dev/github.com/ethereum/go-ethereum  
+https://github.com/ethereum/go-ethereum   
 
 
 ## info  
