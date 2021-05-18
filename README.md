@@ -96,13 +96,11 @@ https://github.com/ethereum/go-ethereum
 ```go
 func NewFile(fd uintptr, name string) *File
 ``` 
-
 - Go는 OOP 기반 언어지만 class와 contructor가 없어 구조체(struct)와 struct factory를 이용해야 한다.
 
-- struct는 value type이다. 
-따라서 struct factory는 포인터를 반환하여 객체 복사가 이루어지지 않는 것이 좋다
+- array와 stuct는 value다. 따라서 함수의 인자로 사용할 때는 값복사가 되지 않게 포인터를 이용하는 것이 좋다. 특히 struct factory는 포인터를 반환하여 객체 복사가 이루어지지 않는 것이 좋다  
 
-- array와 stuct는 value다.  따라서 이용할 때 포인터를 이용하는 것이 좋다. 반면 slice와 map은 reference type이다. 복사하면 참조복사를 한다.  
+- 반면 slice와 map은 reference type이다. 복사하면 참조 복사를 하니까 그냥 사용해도 된다.  
   
 - effective go에서는 array 대신 slice를 이용을 권장하고 있다.  
 
@@ -111,3 +109,42 @@ func NewFile(fd uintptr, name string) *File
 
 - A string is a sequence of bytes. 마셜링할 때 더욱 느끼게 된다. string을 []byte로 변환하는 일이 많다.
 
+- 함수 리터럴과 함수 타입 변수(값으로서의 함수)는 다른겁니다.
+```go
+func main() {
+	i := 0
+
+	// 함수 타입 변수. 함수를 변수에 넣었을 뿐임. 
+	// 값복사를 하고, 함수 스코프 벗어나면 가비지 컬렉팅됨
+	innerAddTenFunc := func(a int) {
+		a += 10
+	}
+
+	// 함수 리터럴. 참조로 변수 가져와 원본을 변화시킴.
+	innerAddTenLiteral := func() {
+		i += 10
+	}
+
+	innerAddTenFunc(i)
+	fmt.Println(i) // 0. 원본 유지.
+	
+	innerAddTenLiteral()
+	fmt.Println(i) // 10. 변화됨
+}
+```
+
+- 슬라이스의 cap을 초과하게 되면 새로운 배열을 만들기 때문에 의도한대로 동작하지 않을 수 있다. 슬라이스는 항상 cap
+
+```go
+func main() {
+	slice1 := []int{1, 2, 3} // len 3, cap 3
+	slice2 := append(slice1, 4, 5) // 4, 5를 추가할 cap이 부족. 기존 cap의 2배인 새로운 배열을 만듦.
+
+	fmt.Println(slice1, len(slice1), cap(slice1)) // [1 2 3] 3 3
+	fmt.Println(slice2, len(slice2), cap(slice2)) // [1 2 3 4 5] 5 6
+	
+	slice1[1] = 100;
+	fmt.Println(slice1) // [1 100 3] 예상대로 바뀜
+	fmt.Println(slice2) // [1 2 3 4 5] 안 바뀜. cap이 부족해서 새 배열을 만들었기 때문.
+}
+```
