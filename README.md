@@ -26,10 +26,10 @@ godoc.org : stdlib, third-party packages
 
 ## book  
 
-가장 빨리 만나는 Go  
+가장 빨리 만나는 Go  http://pyrasis.com/private/2015/06/01/publish-go-for-the-really-impatient-book  
 Go 언어를 활용한 마이크로서비스  
-Go 풀스택 웹 개발   
-Go 마스터하기  005.133 T786m  
+Go 풀스택 웹 개발 006.76 G649g 2020    
+Go 마스터하기  005.133 T786m 절판됨. 도서관에서 빌려볼 것  
 Go in action   
 [DI in go(한국어 책)](http://acornpub.co.kr/book/dependency-injection-go)
 
