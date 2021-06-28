@@ -59,6 +59,7 @@ Go in action
 
 ## good website  
 
+[golangcode. go로 짠 코드 스니펫들 많아서 좋음](https://golangcode.com/)  
 [golangKorea](https://github.com/golangkorea)  
 [effective go(이펙티브 고의 한국어 번역)](https://gosudaweb.gitbooks.io/effective-go-in-korean/content/)  
 [gobyexample](https://gobyexample.com/) => [번역](https://joinc.co.kr/w/GoLang/example/)  
